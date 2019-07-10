@@ -1,0 +1,42 @@
+@import "base.less";
+@import "smart-grid.less";
+
+.wrapper {
+  .wrapper();
+  background-color: #b3d4fc;
+  .md-block({
+  background-color: #eb4f4e;
+  })
+}
+.test{
+  padding: 10px 0;
+  .items{
+    .row-flex;
+    justify-content: center;
+
+    .item{
+      .col();
+      .size(3);
+      .size-md(6);
+      .size-sm(6);
+      .size-xs(12);
+      .xs(max-width, 400px);
+      border: solid 1px;
+
+      margin-top: 15px;
+      margin-bottom: 15px;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+
+      .two{
+        color: #222;
+        font-size: 15px;
+        margin: 10px;
+      }
+      .three{
+        margin: auto 10px 10px 10px;
+      }
+    }
+  }
+}
